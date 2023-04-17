@@ -4,7 +4,6 @@ class Workout {
   date = new Date();
   id = (Date.now() + '').slice(-10);
   clicks = 0;
-
   constructor(coords, distance, duration) {
     this.coords = coords; // [lat, lng]
     this.distance = distance; // in km
@@ -97,6 +96,7 @@ class App {
         this._loadMap.bind(this),
         function () {
           alert('Could not get your position');
+          console.log("Hiiiiiiii")
         }
       );
   }

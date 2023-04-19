@@ -178,7 +178,7 @@ class App {
     // If workout cycling, create cycling object
     if (type === 'cycling') {
       const elevation = +inputElevation.value;
-
+localStora
       if (
         !validInputs(distance, duration, elevation) ||
         !allPositive(distance, duration)
